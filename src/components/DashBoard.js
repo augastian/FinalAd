@@ -8,7 +8,7 @@ class DashBoard extends React.Component {
       img:''
     }
 
-     fetch('http://localhost:3001/dashbo', {
+     fetch('https://whispering-escarpment-86728.herokuapp.com/dashbo', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -39,7 +39,7 @@ class DashBoard extends React.Component {
 
 
   onSubmitSignIn=()=>{
-     fetch('http://localhost:3001/dashboard', {
+     fetch('https://whispering-escarpment-86728.herokuapp.com/dashboard', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({

@@ -29,7 +29,7 @@ class AdminDash extends React.Component {
      
   }
   onSubmitSignIn = () => {
-    fetch('http://localhost:3001/admindash', {
+    fetch('https://whispering-escarpment-86728.herokuapp.com/admindash', {
       method: 'get',
       headers: {'Content-Type': 'application/json'},
      }).then(response=>response.json())
@@ -45,7 +45,7 @@ class AdminDash extends React.Component {
   }
 
   onDelete=()=>{
-       fetch('http://localhost:3001/delete', {
+       fetch('https://whispering-escarpment-86728.herokuapp.com/delete', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({

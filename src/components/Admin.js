@@ -27,7 +27,7 @@ class Admin extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch('http://localhost:3001/admin', {
+    fetch('https://whispering-escarpment-86728.herokuapp.com/admin', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({

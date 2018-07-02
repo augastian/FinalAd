@@ -30,7 +30,7 @@ class SignUp extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch('http://localhost:3001/signup', {
+    fetch('https://whispering-escarpment-86728.herokuapp.com/signup', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
